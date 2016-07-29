@@ -1,3 +1,6 @@
+com/github/juanmougan/examples/sevice/MessageService.class
+com/github/juanmougan/examples/sevice/impl/MessageServiceImpl.class
+com/github/juanmougan/examples/model/Message.class
 com/github/juanmougan/examples/config/WebInitializer.class
-com/github/juanmougan/examples/controller/GreetingController.class
 com/github/juanmougan/examples/Application.class
+com/github/juanmougan/examples/controller/MessageController.class
