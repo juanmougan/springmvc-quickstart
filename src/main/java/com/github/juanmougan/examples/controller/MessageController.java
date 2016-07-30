@@ -18,8 +18,9 @@ import com.github.juanmougan.examples.sevice.MessageService;
  */
 @Controller
 public class MessageController {
-	
-	@Autowired
+
+    public static final String RESOURCE_NAME = "message";
+    @Autowired
 	private MessageService messageService;
 
     @RequestMapping("/greeting")
@@ -28,10 +29,15 @@ public class MessageController {
         return "greeting";
     }
     
-    @RequestMapping(value = "message", method = RequestMethod.GET)
+    @RequestMapping(value = RESOURCE_NAME, method = RequestMethod.GET)
     public String messages(Model model) {
         model.addAttribute("messages", messageService.findAll());
-        return "message/list";
+        return RESOURCE_NAME + "/list";
+    }
+
+    @RequestMapping(value = RESOURCE_NAME, method = RequestMethod.GET)
+    public String newMessage() {
+        return RESOURCE_NAME + "/new";
     }
 
 }
