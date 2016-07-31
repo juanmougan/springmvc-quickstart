@@ -7,21 +7,25 @@
 <head>
     <title>List Messages</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/resources/css/bootstrap.min.css}" rel="stylesheet" />
 </head>
 
 <body>
 
 <h1>New Message</h1>
 
-<form action="#" th:action="@{/message}" th:object="${message}" method="POST">
-    <label for="message_subject">Subject</label>
-    <input type="text" th:field="*{subject}" id="message_subject" />
+<div class="form-group">
+    <form action="#" th:action="@{/message}" th:object="${message}" method="POST">
+        <label for="message_subject">Subject</label>
+        <input type="text" th:field="*{subject}" id="message_subject" class="form-control" />
 
-    <label for="message_body">Body</label>
-    <input type="text" th:field="*{body}" id="message_body"/>
-    <br />
-    <input type="submit" value="Submit" class="btn btn-primary" /> <input type="reset" value="Reset" />
-</form>
+        <label for="message_body">Body</label>
+        <input type="text" th:field="*{body}" id="message_body" class="form-control" />
+        <br />
+        <input type="submit" value="Submit" class="btn btn-primary" />
+        <input type="reset" value="Reset" class="btn btn-secondary" />
+    </form>
+</div>
 
 
 </body>
