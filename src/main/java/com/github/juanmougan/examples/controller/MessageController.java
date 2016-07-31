@@ -45,7 +45,9 @@ public class MessageController {
     
     @RequestMapping(value = "message", method = RequestMethod.POST)
     public String newMessage(@ModelAttribute Message message, Model model) {
-        model.addAttribute("message", messageService.findAll());
+        Message newMessage = (Message) model.asMap().get("message");
+        messageService.createMessage(newMessage);
+        model.addAttribute("messages", messageService.findAll());
         return RESOURCE_NAME + "/list";
     }
 

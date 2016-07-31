@@ -15,6 +15,6 @@ public interface MessageService {
 
 	List<Message> findAll();
 	
-	Message newMessage(Message message);
+	Message createMessage(Message message);
 
 }

@@ -32,7 +32,7 @@ public class MessageServiceImpl implements MessageService {
 	}
 
 	@Override
-	public Message newMessage(Message message) {
+	public Message createMessage(Message message) {
 		this.messages.add(message);
 		return message;
 	}
