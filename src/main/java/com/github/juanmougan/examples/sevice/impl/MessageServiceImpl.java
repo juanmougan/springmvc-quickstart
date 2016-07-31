@@ -17,14 +17,24 @@ import com.github.juanmougan.examples.sevice.MessageService;
  */
 @Service("employeeService")
 public class MessageServiceImpl implements MessageService {
+	
+	private List<Message> messages = new ArrayList<>();
+	
+	public MessageServiceImpl() {
+		this.messages.add(new Message("Hello", "Welcome to the system"));
+		this.messages.add(new Message("Goodbye", "Have a nice day"));
+	}
 
 	// TODO do real implementation
 	@Override
 	public List<Message> findAll() {
-		List<Message> messages = new ArrayList<>();
-		messages.add(new Message("Hello", "Welcome to the system"));
-		messages.add(new Message("Goodbye", "Have a nice day"));
-		return messages;
+		return this.messages;
+	}
+
+	@Override
+	public Message newMessage(Message message) {
+		this.messages.add(message);
+		return message;
 	}
 
 }

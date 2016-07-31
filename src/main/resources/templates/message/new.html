@@ -11,13 +11,16 @@
 
 <body>
 
-<form action="/message" method="post">
+<h1>New Message</h1>
 
+<form action="#" th:action="@{/message}" th:object="${message}" method="POST">
+    <label for="message_subject">Subject</label>
+    <input type="text" th:field="*{subject}" id="message_subject" />
 
-    <label for="message_subject">Asunto</label>
-    <input type="text" name="subject" id="message_subject"/>
-
-    <input type="submit" name="commit" value="Guardar" class="btn btn-primary" data-disable-with="Guardar">
+    <label for="message_body">Body</label>
+    <input type="text" th:field="*{body}" id="message_body"/>
+    <br />
+    <input type="submit" value="Submit" class="btn btn-primary" /> <input type="reset" value="Reset" />
 </form>
 
 

@@ -14,5 +14,7 @@ import com.github.juanmougan.examples.model.Message;
 public interface MessageService {
 
 	List<Message> findAll();
+	
+	Message newMessage(Message message);
 
 }
