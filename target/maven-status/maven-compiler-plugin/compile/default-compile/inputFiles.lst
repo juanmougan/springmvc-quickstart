@@ -1,6 +1,6 @@
-/home/juanma/dev/java/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/config/WebInitializer.java
-/home/juanma/dev/java/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/controller/MessageController.java
-/home/juanma/dev/java/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/sevice/impl/MessageServiceImpl.java
-/home/juanma/dev/java/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/model/Message.java
-/home/juanma/dev/java/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/sevice/MessageService.java
-/home/juanma/dev/java/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/Application.java
+/Users/juanma/dev/java/spring/mvc/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/controller/MessageController.java
+/Users/juanma/dev/java/spring/mvc/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/sevice/impl/MessageServiceImpl.java
+/Users/juanma/dev/java/spring/mvc/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/Application.java
+/Users/juanma/dev/java/spring/mvc/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/config/WebInitializer.java
+/Users/juanma/dev/java/spring/mvc/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/model/Message.java
+/Users/juanma/dev/java/spring/mvc/springmvc-quickstart/src/main/java/com/github/juanmougan/examples/sevice/MessageService.java
