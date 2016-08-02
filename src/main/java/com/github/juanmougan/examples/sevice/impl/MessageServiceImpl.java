@@ -17,7 +17,7 @@ import com.github.juanmougan.examples.sevice.MessageService;
  * @author juanma
  *
  */
-@Service("employeeService")
+@Service("messageService")
 public class MessageServiceImpl implements MessageService {
 	
 	@Autowired
@@ -28,8 +28,8 @@ public class MessageServiceImpl implements MessageService {
 	public MessageServiceImpl() {
 		//this.messages.add(new Message("Hello", "Welcome to the system"));
 		//this.messages.add(new Message("Goodbye", "Have a nice day"));
-		this.messageRepository.save(new Message("Hello", "Welcome to the system"));
-		this.messageRepository.save(new Message("Goodbye", "Have a nice day"));
+		//this.messageRepository.save(new Message("Hello", "Welcome to the system"));
+		//this.messageRepository.save(new Message("Goodbye", "Have a nice day"));
 	}
 
 	// TODO do real implementation
